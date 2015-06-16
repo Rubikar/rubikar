@@ -1,0 +1,2 @@
+# rubikar
+Rubik tournament managment
