@@ -1,0 +1,28 @@
+{
+  "name": "rubikar-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Rubikar project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubikar/rubikar.git"
+  },
+  "keywords": [
+    "rubik"
+  ],
+  "author": "",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Rubikar/rubikar/issues"
+  },
+  "homepage": "https://github.com/Rubikar/rubikar#readme",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "angular-animate": "^1.4.1",
+    "angular-aria": "^1.4.1",
+    "angular-material": "^0.10.0"
+  }
+}
