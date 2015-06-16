@@ -2,7 +2,6 @@
   "name": "rubikar-frontend",
   "version": "1.0.0",
   "description": "Frontend for Rubikar project",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,9 +19,10 @@
   },
   "homepage": "https://github.com/Rubikar/rubikar#readme",
   "dependencies": {
-    "angular": "^1.4.1",
-    "angular-animate": "^1.4.1",
-    "angular-aria": "^1.4.1",
-    "angular-material": "^0.10.0"
+    "angular": "1.4.1",
+    "angular-animate": "1.4.1",
+    "angular-aria": "1.4.1",
+    "angular-material": "0.10.0",
+    "angular-route": "^1.4.1"
   }
 }
