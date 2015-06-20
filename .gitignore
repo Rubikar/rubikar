@@ -1,3 +1,4 @@
 node_modules
+karma_reports
 *.sublime-project
 *.sublime-workspace

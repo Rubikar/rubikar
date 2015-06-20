@@ -1,12 +1,12 @@
 'use strict';
 var sourcePreprocessors = 'coverage';
-function isDebug(argument) {
+/*function isDebug(argument) {
   return argument === '--debug';
 }
 
 if(process.args.some(isDebug) {
   sourcePreprocessors = [];
-}
+}*/
 
 // Karma configuration
 // Generated on Fri Jun 19 2015 15:01:50 GMT-0300 (ART)
@@ -25,7 +25,13 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'js/app/**/*.js',
+      'node_modules/angular/angular.min.js',
+      'node_modules/angular-route/angular-route.min.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'js/app/config/init.js',
+      'js/app/config/routes.js',
+      'js/app/controllers/home/homeController.js',
+
       'test/unittesting/**/*Spec.js'
     ],
 
@@ -87,7 +93,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'PhantomJS'],
+    browsers: ['Chrome'],
 
     browserNoActivityTimeout: 15000,
 

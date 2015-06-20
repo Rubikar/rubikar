@@ -47,6 +47,7 @@
     "karma-json-fixtures-preprocessor": "0.0.4",
     "karma-junit-reporter": "~0.2.2",
     "phantomjs": "~1.9.17",
-    "karma-phantomjs-launcher": "~0.2.0"
+    "karma-phantomjs-launcher": "~0.2.0",
+    "angular-mocks": "~1.4.1"
   }
 }
