@@ -2,3 +2,11 @@ node_modules
 karma_reports
 *.sublime-project
 *.sublime-workspace
+
+//minimization
+app_concat.js
+app_concat.js.map
+app.min.js
+app.min.js.map
+frameworks.js
+index-non-min.html
