@@ -23,7 +23,9 @@
     "angular-animate": "1.4.1",
     "angular-aria": "1.4.1",
     "angular-material": "0.10.0",
-    "angular-route": "^1.4.1",
+    "angular-mocks": "1.4.1",
+    "angular-resource": "1.4.1",
+    "angular-route": "1.4.1",
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-concat": "~0.5.1",
@@ -46,8 +48,8 @@
     "karma-jasmine": "~0.3.5",
     "karma-json-fixtures-preprocessor": "0.0.4",
     "karma-junit-reporter": "~0.2.2",
-    "phantomjs": "~1.9.17",
     "karma-phantomjs-launcher": "~0.2.0",
-    "angular-mocks": "~1.4.1"
+    "phantomjs": "~1.9.17",
+    "underscore": "^1.8.3"
   }
 }
