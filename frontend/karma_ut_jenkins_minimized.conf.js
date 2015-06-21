@@ -1,13 +1,4 @@
 'use strict';
-var sourcePreprocessors = 'coverage';
-/*function isDebug(argument) {
-  return argument === '--debug';
-}
-
-if(process.args.some(isDebug) {
-  sourcePreprocessors = [];
-}*/
-
 // Karma configuration
 // Generated on Fri Jun 19 2015 15:01:50 GMT-0300 (ART)
 
@@ -25,13 +16,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/angular/angular.min.js',
-      'node_modules/angular-resource/angular-resource.min.js',
-      'node_modules/angular-route/angular-route.min.js',
+      'js/vendor/frameworks.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'js/app/config/init.js',
-      'js/app/config/routes.js',
-      'js/app/controllers/home/homeController.js',
+      'js/app/app.min.js',
 
       'test/unittesting/**/*Spec.js'
     ],
@@ -41,34 +28,10 @@ module.exports = function(config) {
     exclude: [
     ],
 
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-      'app/**/*.js': sourcePreprocessors
-    },
-
-
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['dots', 'coverage'],
-
-    coverageReporter: {
-      reporters: [{
-        type : 'html',
-        dir : 'karma_reports/coverage/',
-        subdir: function(browser) {
-          // normalization process to keep a consistent browser name accross different
-          // OS
-          return browser.toLowerCase().split(/[ /-]/)[0];
-        }
-      }]
-    },
-
-    htmlReporter: {
-      outputDir: 'karma_reports/html'
-    },
+    reporters: ['dots', 'junit'],
 
     junitReporter: {
       outputFile: 'karma_reports/xml/karma-ut-results.xml',
@@ -94,7 +57,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'Firefox', 'PhantomJS'],
 
     browserNoActivityTimeout: 15000,
 
@@ -102,7 +65,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRun: true,
 
     proxies: {
       '/_generated/views': '/base/_generated/views'
