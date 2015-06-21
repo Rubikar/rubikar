@@ -3,26 +3,26 @@
 module.exports = function(grunt) {
   var frameworksFiles =
   [
-    './assets/js/frameworks/jquery/jquery-1.11.3.min.js',
-    './assets/js/frameworks/underscore/underscore-min.js',
-    './assets/js/frameworks/angular/angular.min.js',
-    './assets/js/frameworks/angular/angular-resource.min.js',
-    './assets/js/frameworks/angular/angular-route.min.js'
+    './js/vendor/jquery/jquery-1.11.3.min.js',
+    './node_modules/underscore/underscore-min.js',
+    './node_modules/angular/angular.min.js',
+    './node_modules/angular-resource/angular-resource.min.js',
+    './node_modules/angular-route/angular-route.min.js'
   ];
-  var appConcatFile = './app/app_concat.js';
-  var appMinFile = './app/app.min.js';
-  var frameworksConcatFile = './assets/js/frameworks/frameworks.js';
+  var appConcatFile = './js/app/app_concat.js';
+  var appMinFile = './js/app/app.min.js';
+  var frameworksConcatFile = './js/vendor/frameworks.js';
   var indexNonMin = 'index-non-min.html';
 
   var jscsFiles = [
-    './app/**/*.js',
+    './js/app/**/*.js',
     './test/**/*.js',
-    '!./app/app_concat.js',
-    '!./app/app.min.js'
+    '!./js/app/app_concat.js',
+    '!./js/app/app.min.js'
   ];
 
   var jshintFiles = [
-    './app/**/*.js',
+    './js/app/**/*.js',
     './test/**/*.js'
   ];
 
@@ -44,10 +44,10 @@ module.exports = function(grunt) {
     },
     karma: {
       coverage: {
-        configFile: 'karma_jenkins_ut.conf.js'
+        configFile: 'karma_ut_jenkins_coverage.conf.js'
       },
       minimized: {
-        configFile: 'karma_minimized_ut.conf.js'
+        configFile: 'karma_ut_jenkins_minimized.conf.js'
       },
       dev: {
         configFile: 'karma_ut.conf.js'
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
           separator: ';',
           sourceMap: true
         },
-        src: ['./app/config/init.js', './app/**/*.js'],
+        src: ['./js/app/config/init.js', './js/app/**/*.js'],
         dest: appConcatFile,
       },
       framework: {
@@ -124,7 +124,7 @@ module.exports = function(grunt) {
           sourceMapIn: appConcatFile + '.map',
         },
         files: {
-          './app/app.min.js' : [appConcatFile]
+          './js/app/app.min.js' : [appConcatFile]
         }
       }
     },
