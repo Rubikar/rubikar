@@ -1,2 +1,2 @@
-# rubikar
+# Rubikar
 Rubik tournament managment
