@@ -50,6 +50,8 @@
     "karma-json-fixtures-preprocessor": "0.0.4",
     "karma-junit-reporter": "~0.2.2",
     "karma-phantomjs-launcher": "~0.2.0",
+    "load-grunt-config": "^0.17.1",
+    "load-grunt-tasks": "^3.2.0",
     "phantomjs": "~1.9.17",
     "underscore": "^1.8.3"
   }
