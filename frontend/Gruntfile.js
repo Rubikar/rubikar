@@ -17,6 +17,10 @@ module.exports = function(grunt){
           './node_modules/angular/angular.min.js',
           './node_modules/angular-resource/angular-resource.min.js',
           './node_modules/angular-route/angular-route.min.js'
+        ],
+        utFiles: [
+          './node_modules/angular-mocks/angular-mocks.js',
+          './test/unittesting/**/*Spec.js'
         ]
       },
       jshint: {
