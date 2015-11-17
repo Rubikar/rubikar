@@ -1,1 +1,5 @@
-angular.module('Rubikar', ['ngRoute']);
+'use strict';
+
+var ModuleName = 'Rubikar';
+
+angular.module(ModuleName, ['ngRoute']);

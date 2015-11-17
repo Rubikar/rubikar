@@ -26,7 +26,8 @@
     "conveyTemplates":true,
     "conveyBenchmark":true,
     "conveyFtHelpers":true,
-    "conveyRPCHelpers":true
+    "conveyRPCHelpers":true,
+    "ModuleName":true
   },
   "globalstrict": true,
   "quotmark": true,
