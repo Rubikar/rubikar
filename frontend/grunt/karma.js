@@ -69,7 +69,7 @@ module.exports = function(grunt, options){
         files: karmaFiles
       },
       preprocessors: {
-        'app/**/*.js': 'coverage'
+        'js/app/**/*.js': 'coverage'
       },
       reporters: ['dots', 'coverage'],
       coverageReporter: {
