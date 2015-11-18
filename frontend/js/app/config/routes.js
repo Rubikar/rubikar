@@ -7,7 +7,6 @@ angular.module(ModuleName).config([
       .when('/home', {
         templateUrl: 'js/app/views/home/home.html',
         controller: 'HomeController'
-      })
-      .otherwise({redirectTo: '/home'});
+      });
   }
 ]);
